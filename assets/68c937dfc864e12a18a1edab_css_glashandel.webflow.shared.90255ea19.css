@@ -2047,7 +2047,7 @@ textarea.w-input, textarea.w-select {
 
 @font-face {
   font-family: Blog Icon Font;
-  src: url("https://cdn.prod.website-files.com/68c937dfc864e12a18a1edab/68c937e0c864e12a18a1f14b_fontello.woff2") format("woff2");
+  src: url("68c937dfc864e12a18a1edab_68c937e0c864e12a18a1f14b_fontello.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2055,7 +2055,7 @@ textarea.w-input, textarea.w-select {
 
 @font-face {
   font-family: Objectivity;
-  src: url("https://cdn.prod.website-files.com/68c937dfc864e12a18a1edab/68c937e0c864e12a18a1f29e_Objectivity-Regular.woff2") format("woff2");
+  src: url("68c937dfc864e12a18a1edab_68c937e0c864e12a18a1f29e_Objectivity-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2063,7 +2063,7 @@ textarea.w-input, textarea.w-select {
 
 @font-face {
   font-family: Objectivity;
-  src: url("https://cdn.prod.website-files.com/68c937dfc864e12a18a1edab/68c937e0c864e12a18a1f29f_Objectivity-Medium.woff2") format("woff2");
+  src: url("68c937dfc864e12a18a1edab_68c937e0c864e12a18a1f29f_Objectivity-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2071,7 +2071,7 @@ textarea.w-input, textarea.w-select {
 
 @font-face {
   font-family: Objectivity;
-  src: url("https://cdn.prod.website-files.com/68c937dfc864e12a18a1edab/68c937e0c864e12a18a1f2a0_Objectivity-ExtraBold.woff2") format("woff2");
+  src: url("68c937dfc864e12a18a1edab_68c937e0c864e12a18a1f2a0_Objectivity-ExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -2079,7 +2079,7 @@ textarea.w-input, textarea.w-select {
 
 @font-face {
   font-family: Icon Rounded;
-  src: url("https://cdn.prod.website-files.com/68c937dfc864e12a18a1edab/68c937e0c864e12a18a1ee96_line-rounded-icon-font-brix.woff") format("woff");
+  src: url("68c937dfc864e12a18a1edab_68c937e0c864e12a18a1ee96_line-rounded-icon-font-brix.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2087,7 +2087,7 @@ textarea.w-input, textarea.w-select {
 
 @font-face {
   font-family: Social Media Icon Font BRIX;
-  src: url("https://cdn.prod.website-files.com/68c937dfc864e12a18a1edab/68c937e0c864e12a18a1ee9d_social-media-icon-font-brix.woff") format("woff");
+  src: url("68c937dfc864e12a18a1edab_68c937e0c864e12a18a1ee9d_social-media-icon-font-brix.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2095,7 +2095,7 @@ textarea.w-input, textarea.w-select {
 
 @font-face {
   font-family: Icon Squared;
-  src: url("https://cdn.prod.website-files.com/68c937dfc864e12a18a1edab/68c937e0c864e12a18a1f0a1_fontello.woff") format("woff");
+  src: url("68c937dfc864e12a18a1edab_68c937e0c864e12a18a1f0a1_fontello.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2103,7 +2103,7 @@ textarea.w-input, textarea.w-select {
 
 @font-face {
   font-family: Filled Icons;
-  src: url("https://cdn.prod.website-files.com/68c937dfc864e12a18a1edab/68c937e0c864e12a18a1f0a9_fontello.woff") format("woff");
+  src: url("68c937dfc864e12a18a1edab_68c937e0c864e12a18a1f0a9_fontello.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -3694,7 +3694,7 @@ textarea.w-input, textarea.w-select {
 
 .w-checkbox-input--inputType-custom.w--redirected-checked {
   background-color: #3898ec;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg");
+  background-image: url("cloudfront_custom-checkbox-checkmark.589d534424.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7025,7 +7025,7 @@ figcaption {
 .checkbox.w--redirected-checked {
   border-color: var(--globals--border-color--border-accent);
   background-color: var(--globals--color--surfaces--accent);
-  background-image: url("https://cdn.prod.website-files.com/68c937dfc864e12a18a1edab/68c937e0c864e12a18a1ee64_check-icon.svg");
+  background-image: url("68c937dfc864e12a18a1edab_68c937e0c864e12a18a1ee64_check-icon.svg");
   border-radius: 50%;
 }
 
@@ -8840,7 +8840,7 @@ figcaption {
 }
 
 .image.office-image-v1.v2 {
-  background-image: url("https://cdn.prod.website-files.com/68c937dfc864e12a18a1edab/68cfd72601c4e0ebcf0399e0_WhatsApp%20Image%202025-09-21%20at%2011.37.32.avif");
+  background-image: url("68c937dfc864e12a18a1edab_68cfd72601c4e0ebcf0399e0_WhatsApp%20Image%202025-09-21%20at%2011.37.32.avif");
   background-position: 0 0;
   background-size: auto;
 }
@@ -10189,7 +10189,7 @@ figcaption {
   -webkit-text-fill-color: inherit;
   mix-blend-mode: normal;
   background-color: #64acd4;
-  background-image: url("https://cdn.prod.website-files.com/68c937dfc864e12a18a1edab/68cc424a05e2845c216aab19_WhatsApp%20Image%202025-09-18%20at%2009.55.13.avif");
+  background-image: url("68c937dfc864e12a18a1edab_68cc424a05e2845c216aab19_WhatsApp%20Image%202025-09-18%20at%2009.55.13.avif");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -11094,7 +11094,7 @@ figcaption {
 }
 
 .agent-single-card---bg {
-  background-image: url("https://cdn.prod.website-files.com/68c937dfc864e12a18a1edab/68c937e0c864e12a18a1f1e6_agent-card-bg-property-x-webflow-template.avif");
+  background-image: url("68c937dfc864e12a18a1edab_68c937e0c864e12a18a1f1e6_agent-card-bg-property-x-webflow-template.avif");
   background-position: 50%;
   background-size: cover;
   height: 140px;
@@ -11756,7 +11756,7 @@ figcaption {
 
 .office-card-content-v1-wrapper {
   z-index: 1;
-  background-image: url("https://cdn.prod.website-files.com/68c937dfc864e12a18a1edab/68d4fa898b11b04683611dc7_WhatsApp%20Image%202025-09-24%20at%2018.27.49.jpeg"), linear-gradient(#000, #000000bd 20%, #0000);
+  background-image: url("68c937dfc864e12a18a1edab_68d4fa898b11b04683611dc7_WhatsApp%20Image%202025-09-24%20at%2018.27.49.jpeg"), linear-gradient(#000, #000000bd 20%, #0000);
   background-position: 50%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: cover, auto;
@@ -11765,7 +11765,7 @@ figcaption {
 }
 
 .office-card-content-v1-wrapper.v2 {
-  background-image: url("https://cdn.prod.website-files.com/68c937dfc864e12a18a1edab/68d4fa9f8dbbe960d0f05070_WhatsApp%20Image%202025-09-24%20at%2018.27.49%20(1).jpeg"), linear-gradient(#000, #000000bd 20%, #0000);
+  background-image: url("68c937dfc864e12a18a1edab_68d4fa9f8dbbe960d0f05070_WhatsApp%20Image%202025-09-24%20at%2018.27.49%20(1).jpeg"), linear-gradient(#000, #000000bd 20%, #0000);
 }
 
 .office-card-v1-content {

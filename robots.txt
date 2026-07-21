@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /bedankt
+
+Sitemap: https://www.glashandelgroenewegen.nl/sitemap.xml
