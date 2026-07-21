@@ -18329,3 +18329,135 @@ figcaption {
     justify-self: auto;
   }
 }
+
+/* ============================================
+   Glashandel Groenewegen — eigen stijllaag
+   (bovenop het Webflow-CSS, voor het herontwerp
+   van secties naar een warmere, minder corporate stijl)
+   ============================================ */
+
+.gg-story-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.gg-story-photo {
+  border-radius: var(--globals--border-radius--br-large);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.gg-story-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gg-story-kicker {
+  color: var(--core--colors--primary--500);
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.gg-story-heading {
+  font-size: 34px;
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+
+.gg-story-text {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--globals--color--texts--03);
+  margin: 0;
+}
+
+.gg-news-banner {
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px 28px;
+  background: var(--globals--color--surfaces--01);
+  border-radius: var(--globals--border-radius--br-large);
+  padding: 28px 32px;
+  box-shadow: 0 1px 2px var(--core--box-shadow--bs-neutral-regular);
+}
+
+.gg-news-icon {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gg-news-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gg-news-content {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.gg-news-label {
+  color: var(--core--colors--primary--500);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
+}
+
+.gg-news-content p {
+  margin: 0;
+  color: var(--globals--color--texts--03);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.gg-news-cta {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--core--colors--primary--500);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.gg-news-cta-arrow {
+  transition: transform 0.15s ease;
+}
+
+.gg-news-cta:hover .gg-news-cta-arrow {
+  transform: translateX(3px);
+}
+
+@media screen and (min-width: 768px) {
+  .gg-story-grid {
+    grid-template-columns: 5fr 7fr;
+    gap: 56px;
+  }
+
+  .gg-story-photo {
+    aspect-ratio: auto;
+    height: 100%;
+    min-height: 340px;
+  }
+
+  .gg-story-heading {
+    font-size: 40px;
+  }
+}
