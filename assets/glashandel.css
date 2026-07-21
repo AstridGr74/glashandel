@@ -10194,6 +10194,7 @@ figcaption {
   background-size: cover;
   background-attachment: scroll;
   background-clip: border-box;
+  background-position: center top;
   padding-bottom: 50.35%;
 }
 
@@ -15383,6 +15384,7 @@ figcaption {
 
   .section-card.hero-card---v1 {
     padding-top: 120px;
+    background-size: 300% auto;
   }
 
   .section-card.cta-v1 {
