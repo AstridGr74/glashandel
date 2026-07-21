@@ -10195,7 +10195,7 @@ figcaption {
   background-attachment: scroll;
   background-clip: border-box;
   background-position: center top;
-  padding-bottom: 50.35%;
+  padding-bottom: 36%;
 }
 
 .section-card.cta-v1 {
@@ -12459,7 +12459,7 @@ figcaption {
   }
 
   .section-card.hero-card---v1 {
-    padding-bottom: 700px;
+    padding-bottom: 550px;
   }
 
   .section-card.cta-v1 {
@@ -18459,4 +18459,46 @@ figcaption {
   .gg-story-heading {
     font-size: 40px;
   }
+}
+
+/* Astrid: geen afgeronde hoeken op de grote sectiekaarten
+   (hero, cta-banners) — rechte hoeken voelen minder "verpakt" */
+.section-card {
+  border-radius: 0;
+}
+
+/* Menubalk: duidelijke hover- en actief-status i.p.v. alleen kleurverschil */
+.list-nav-menu .link {
+  position: relative;
+  padding-bottom: 4px;
+  opacity: 0.88;
+  transition: opacity 0.15s ease;
+}
+
+.list-nav-menu .link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: right 0.18s ease;
+}
+
+.list-nav-menu .link:hover {
+  opacity: 1;
+}
+
+.list-nav-menu .link:hover::after {
+  right: 0;
+}
+
+.list-nav-menu .link.w--current {
+  opacity: 1;
+}
+
+.list-nav-menu .link.w--current::after {
+  right: 0;
 }
