@@ -19001,3 +19001,29 @@ figcaption {
   vertical-align: middle;
   margin-top: -8px;
 }
+
+.gg-about-hero {
+  padding-top: 48px;
+  padding-bottom: 0;
+}
+
+.gg-about-h1 {
+  font-size: 34px;
+  line-height: 1.15;
+}
+
+@media (min-width: 768px) {
+  .gg-about-h1 {
+    font-size: 46px;
+  }
+}
+
+.gg-about-hero-photo {
+  aspect-ratio: 16 / 9;
+}
+
+.gg-about-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
