@@ -18969,6 +18969,11 @@ figcaption {
   pointer-events: none;
 }
 
+.gg-underline-svg--tight {
+  bottom: -4px;
+  height: 8px;
+}
+
 .gg-news-arrow {
   display: none;
   position: absolute;
