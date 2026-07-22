@@ -4225,7 +4225,9 @@ figcaption {
 }
 
 .badge.mid {
-  background-color: var(--components--badge-neutral--background-color--bg-dark);
+  background-color: #e3f0fa;
+  color: #0171bb;
+  box-shadow: none;
 }
 
 .badge.neutral {
@@ -4233,10 +4235,29 @@ figcaption {
 }
 
 .badge.secondary {
-  border: var(--globals--border-width--bw-default) solid var(--components--badge-secondary--border-color--bg-light);
-  background-color: var(--components--badge-secondary--background-color--bg-light);
-  box-shadow: 0 1px 3px 0 var(--core--box-shadow--bs-neutral-small);
-  color: var(--components--badge--text-color--text-dark);
+  border: none;
+  background-color: #e3f0fa;
+  box-shadow: none;
+  color: #0171bb;
+}
+
+.badge.mid .badge-icon-left,
+.badge.secondary .badge-icon-left {
+  background-color: #fff;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  margin-top: -2px;
+  margin-left: -4px;
+  padding: 3px;
+}
+
+.badge.mid .badge-icon-left img,
+.badge.secondary .badge-icon-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .badge.tertiary {
@@ -10101,6 +10122,16 @@ figcaption {
   display: flex;
 }
 
+.contact-link---icon-left > img:not(.contact-icon) {
+  width: 24px;
+  min-width: 24px;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  box-sizing: content-box;
+}
+
 .text-link.light {
   color: var(--components--links--text-color--text-light);
 }
@@ -10472,6 +10503,11 @@ figcaption {
   align-items: center;
   font-weight: 500;
   display: flex;
+}
+
+.card-feature-wrapper img {
+  width: 22px;
+  min-width: 22px;
 }
 
 .property-details-wrapper-v1-1 {
@@ -11280,7 +11316,7 @@ figcaption {
 }
 
 .contact-icon {
-  max-width: 20px;
+  max-width: 64px;
 }
 
 .faq-v2-wrapper {
@@ -11732,6 +11768,11 @@ figcaption {
   align-items: center;
   font-weight: 500;
   display: flex;
+}
+
+.card-post-date img {
+  width: 20px;
+  min-width: 20px;
 }
 
 .post-details-wrapper-v3 {
