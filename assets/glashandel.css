@@ -18968,6 +18968,11 @@ figcaption {
   height: 20px;
 }
 
+.gg-underline-svg--tight-thick {
+  bottom: -2px;
+  height: 14px;
+}
+
 .gg-news-arrow {
   display: none;
   position: absolute;
