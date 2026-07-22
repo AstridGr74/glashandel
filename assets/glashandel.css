@@ -18443,7 +18443,7 @@ figcaption {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--core--colors--primary--500);
   text-decoration: none;
   white-space: nowrap;
