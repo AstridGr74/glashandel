@@ -19068,3 +19068,9 @@ figcaption {
   padding: 2px;
 }
 
+
+.gg-wwd-linklist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+}
