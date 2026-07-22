@@ -18953,12 +18953,19 @@ figcaption {
 }
 
 .gg-about-h1-arrow {
-  position: absolute;
-  top: -6px;
-  left: 0;
-  width: 100%;
-  height: calc(100% + 12px);
+  display: none;
   pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .gg-about-h1-arrow {
+    display: block;
+    position: absolute;
+    top: -14px;
+    left: 350px;
+    width: 210px;
+    height: 140px;
+  }
 }
 
 .gg-underline-highlight {
