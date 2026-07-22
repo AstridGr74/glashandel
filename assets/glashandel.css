@@ -18521,3 +18521,80 @@ figcaption {
 .hero-card---v1 p {
   text-shadow: 0 1px 12px rgba(4, 20, 40, .35), 0 1px 2px rgba(4, 20, 40, .3);
 }
+
+/* Wat we doen: foto + tekstlijst i.p.v. negen identieke iconkaartjes */
+.gg-services-heading {
+  font-weight: 500;
+}
+
+.gg-services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: start;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .gg-services-grid {
+    grid-template-columns: 5fr 7fr;
+    gap: 56px;
+  }
+}
+
+.gg-services-photo-bar {
+  height: 4px;
+  background: #0171bb;
+  margin-bottom: 12px;
+}
+
+.gg-services-photo {
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.gg-services-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gg-services-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #eeeff1;
+}
+
+.gg-services-list li {
+  border-bottom: 1px solid #eeeff1;
+}
+
+.gg-services-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 2px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1d1f;
+  text-decoration: none;
+  transition: color .15s ease;
+}
+
+.gg-services-list a:hover {
+  color: #0171bb;
+}
+
+.gg-services-arrow {
+  color: #0171bb;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity .15s ease, transform .15s ease;
+}
+
+.gg-services-list a:hover .gg-services-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
