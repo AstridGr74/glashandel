@@ -18342,8 +18342,27 @@ figcaption {
   align-items: center;
 }
 
+.gg-story-accent {
+  color: #0171bb;
+}
+
+.gg-story-photo-bar {
+  height: 4px;
+  background: #0171bb;
+  margin-bottom: 12px;
+}
+
+.gg-story-photo-caption {
+  font-size: 14px;
+  color: var(--globals--color--texts--03);
+  margin-top: 10px;
+}
+
+.gg-story-text + .gg-story-text {
+  margin-top: 16px;
+}
+
 .gg-story-photo {
-  border-radius: var(--globals--border-radius--br-large);
   overflow: hidden;
   aspect-ratio: 4 / 3;
 }
@@ -18368,6 +18387,7 @@ figcaption {
   font-size: 34px;
   line-height: 1.15;
   margin: 0 0 16px;
+  font-weight: 500;
 }
 
 .gg-story-text {
@@ -18375,6 +18395,7 @@ figcaption {
   line-height: 1.6;
   color: var(--globals--color--texts--03);
   margin: 0;
+  max-width: 46ch;
 }
 
 .gg-news-banner {
@@ -18446,7 +18467,7 @@ figcaption {
 
 @media screen and (min-width: 768px) {
   .gg-story-grid {
-    grid-template-columns: 5fr 7fr;
+    grid-template-columns: 6fr 5fr;
     gap: 56px;
   }
 
