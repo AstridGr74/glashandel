@@ -18404,19 +18404,11 @@ figcaption {
   flex-wrap: wrap;
   align-items: center;
   gap: 20px 28px;
-  background: var(--globals--color--surfaces--01);
-  border-radius: var(--globals--border-radius--br-large);
-  padding: 28px 32px;
-  box-shadow: 0 1px 2px var(--core--box-shadow--bs-neutral-regular);
-}
-
-.gg-news-icon {
-  flex: none;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: none;
+  border-radius: 0;
+  border-left: 4px solid #0171bb;
+  padding: 4px 0 4px 24px;
+  box-shadow: none;
 }
 
 .gg-news-icon img {
