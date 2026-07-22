@@ -19164,3 +19164,8 @@ figcaption {
   color: #0171bb;
   margin-bottom: 4px;
 }
+
+.dropdown-nav .sub-header .text-weight-semi {
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
