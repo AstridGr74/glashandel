@@ -18948,29 +18948,10 @@ figcaption {
   height: calc(100% + 48px);
 }
 
-.gg-about-h1-arrow-wrap {
-  position: relative;
-}
-
-.gg-about-h1-arrow {
-  display: none;
-  pointer-events: none;
-}
-
-@media (min-width: 768px) {
-  .gg-about-h1-arrow {
-    display: block;
-    position: absolute;
-    top: -14px;
-    left: 350px;
-    width: 210px;
-    height: 140px;
-  }
-}
-
 .gg-underline-highlight {
   position: relative;
   display: inline-block;
+  white-space: nowrap;
 }
 
 .gg-underline-svg {
@@ -19028,8 +19009,15 @@ figcaption {
 }
 
 .gg-about-h1 {
-  font-size: 34px;
-  line-height: 1.15;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+@media (min-width: 480px) {
+  .gg-about-h1 {
+    font-size: 34px;
+    line-height: 1.15;
+  }
 }
 
 @media (min-width: 768px) {
