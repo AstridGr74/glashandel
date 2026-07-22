@@ -19018,8 +19018,55 @@ figcaption {
   }
 }
 
-.gg-about-hero-photo {
-  aspect-ratio: 16 / 9;
+.gg-about-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.gg-about-hero-grid-item img,
+.gg-about-hero-grid-stack .gg-about-hero-grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gg-about-hero-grid-item--large {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.gg-about-hero-grid-stack {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.gg-about-hero-grid-stack .gg-about-hero-grid-item {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .gg-about-hero-grid {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: stretch;
+  }
+
+  .gg-about-hero-grid-item--large {
+    aspect-ratio: auto;
+    height: 100%;
+  }
+
+  .gg-about-hero-grid-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .gg-about-hero-grid-stack .gg-about-hero-grid-item {
+    aspect-ratio: auto;
+    height: 100%;
+  }
 }
 
 .gg-about-section {
