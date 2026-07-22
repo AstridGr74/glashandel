@@ -7299,11 +7299,15 @@ figcaption {
   position: relative;
 }
 
+.accordion-icon-wrapper {
+  background-color: #e3f0fa !important;
+}
+
 .accordion-icon-line {
   width: 16px;
   height: var(--core--border-width--bw-size-4);
   border-radius: var(--core--border-radius--br-size-5);
-  background-color: var(--globals--color--surfaces--07);
+  background-color: #0171bb !important;
 }
 
 .accordion-icon-line.vertical {
@@ -10696,7 +10700,7 @@ figcaption {
 }
 
 .faqs-title {
-  font-size: var(--core--font-size--displays--display-5);
+  font-size: 18px;
   line-height: var(--core--line-height--regular);
   font-weight: 500;
 }
@@ -18693,6 +18697,7 @@ figcaption {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px 32px;
+  align-items: stretch;
 }
 
 @media screen and (min-width: 768px) {
@@ -18702,9 +18707,13 @@ figcaption {
 }
 
 .gg-service-tile {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
   color: inherit;
+  background: #fff;
+  box-shadow: 0 6px 16px -10px rgba(15, 25, 45, .2);
 }
 
 .gg-service-photo {
@@ -18723,6 +18732,7 @@ figcaption {
   object-fit: cover;
   display: block;
   transition: transform .3s ease;
+  filter: brightness(1.3) contrast(1.02);
 }
 
 .gg-service-tile:hover .gg-service-img {
@@ -18730,7 +18740,8 @@ figcaption {
 }
 
 .gg-service-body {
-  padding-top: 16px;
+  padding: 20px 20px 24px;
+  flex: 1;
 }
 
 .gg-service-title {
@@ -18783,4 +18794,132 @@ figcaption {
 
 .gg-service-tile-noPhoto .gg-services-arrow {
   color: #fff;
+}
+
+.gg-projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .gg-projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+}
+
+.gg-project-tile {
+  display: block;
+  background: #fff;
+  text-decoration: none;
+  border-top: 4px solid #0171bb;
+  box-shadow: 0 16px 32px -12px rgba(15, 25, 45, .3);
+}
+
+.gg-project-photo {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: #eeeff1;
+}
+
+.gg-project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .3s ease;
+  filter: brightness(1.3) contrast(1.02);
+}
+
+.gg-project-img.brighter {
+  filter: brightness(1.55) contrast(1.03);
+}
+
+.gg-project-tile:hover .gg-project-img {
+  transform: scale(1.04);
+}
+
+.gg-project-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #fff;
+  color: #111;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+}
+
+.gg-project-body {
+  padding: 24px 20px 28px;
+}
+
+.gg-project-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.gg-project-tile:hover .gg-project-title {
+  color: #0171bb;
+}
+
+.gg-project-desc {
+  font-size: 14px;
+  color: var(--globals--color--texts--03);
+  line-height: 1.5;
+}
+
+.gg-project-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0171bb;
+  margin-top: 16px;
+}
+
+.gg-project-link .gg-services-arrow {
+  opacity: 1;
+  transform: none;
+}
+
+.gg-project-tile:hover .gg-project-link {
+  text-decoration: underline;
+}
+
+.footer-card {
+  background-color: #fff !important;
+  border-radius: 0 !important;
+  border-top: 4px solid #0171bb;
+}
+
+.footer-card .footer-top---footer-v3 {
+  border-bottom-color: var(--globals--border-color--border-3);
+}
+
+.footer-card .footer-item-link,
+.footer-card .link.light,
+.footer-card .footer-title,
+.footer-card .text-color-white,
+.footer-card .text-light {
+  color: #1a1d1f;
+}
+
+.footer-card .footer-item-link:hover,
+.footer-card .link.light:hover {
+  color: #0171bb;
+}
+
+.footer-card .text-neutral-light {
+  color: var(--globals--color--texts--03);
+}
+
+.footer-card .contact-link---icon-left > img:not(.contact-icon) {
+  background-color: transparent;
+  padding: 0;
 }
