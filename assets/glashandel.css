@@ -19074,3 +19074,23 @@ figcaption {
   flex-wrap: wrap;
   gap: 8px 28px;
 }
+
+.gg-wwd-linklist-label {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--globals--color--texts--03);
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.gg-circle-svg--label {
+  top: -20px;
+  left: -40px;
+  width: calc(100% + 80px);
+  height: calc(100% + 42px);
+}
+
+.gg-underline-svg--fineliner {
+  bottom: -6px;
+  height: 10px;
+}
