@@ -19018,57 +19018,6 @@ figcaption {
   }
 }
 
-.gg-about-hero-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
-}
-
-.gg-about-hero-grid-item img,
-.gg-about-hero-grid-stack .gg-about-hero-grid-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.gg-about-hero-grid-item--large {
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-}
-
-.gg-about-hero-grid-stack {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.gg-about-hero-grid-stack .gg-about-hero-grid-item {
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .gg-about-hero-grid {
-    grid-template-columns: 1.4fr 1fr;
-    align-items: stretch;
-  }
-
-  .gg-about-hero-grid-item--large {
-    aspect-ratio: auto;
-    height: 100%;
-  }
-
-  .gg-about-hero-grid-stack {
-    grid-template-columns: 1fr;
-  }
-
-  .gg-about-hero-grid-stack .gg-about-hero-grid-item {
-    aspect-ratio: auto;
-    height: 100%;
-  }
-}
-
 .gg-about-section {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -19095,37 +19044,5 @@ figcaption {
   margin-top: 0;
   margin-left: 0;
   padding: 2px;
-}
-
-.gg-martin-row {
-  margin-top: 16px;
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.gg-martin-photo {
-  width: 76px;
-  height: 76px;
-  min-width: 76px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #0171bb;
-}
-
-.gg-martin-text {
-  margin-top: 0;
-}
-
-@media (max-width: 479px) {
-  .gg-martin-row {
-    gap: 14px;
-  }
-
-  .gg-martin-photo {
-    width: 56px;
-    height: 56px;
-    min-width: 56px;
-  }
 }
 
