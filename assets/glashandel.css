@@ -19076,7 +19076,14 @@ figcaption {
 
 .gg-about-badge.badge {
   min-height: 30px;
+  width: fit-content;
+  align-self: flex-start;
+  margin-bottom: 20px;
   padding: 6px 14px 6px;
+  font-size: 13px;
+}
+
+.gg-about-badge .display-1 {
   font-size: 13px;
 }
 
