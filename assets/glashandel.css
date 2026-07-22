@@ -10189,7 +10189,7 @@ figcaption {
   -webkit-text-fill-color: inherit;
   mix-blend-mode: normal;
   background-color: #64acd4;
-  background-image: radial-gradient(ellipse 900px 550px at 76% 30%, rgba(8,20,45,.5) 0%, rgba(8,20,45,.28) 45%, rgba(8,20,45,0) 78%), url("hero-visual.webp");
+  background-image: radial-gradient(ellipse 900px 550px at 76% 30%, rgba(8,20,45,.5) 0%, rgba(8,20,45,.28) 45%, rgba(8,20,45,0) 78%), url("hero-visual.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
