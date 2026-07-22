@@ -18542,49 +18542,84 @@ figcaption {
   }
 }
 
-.gg-services-photo-bar {
-  height: 4px;
-  background: #0171bb;
-  margin-bottom: 12px;
+.gg-services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px 32px;
 }
 
-.gg-services-photo {
+@media screen and (min-width: 768px) {
+  .gg-services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gg-service-tile {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gg-service-photo {
   overflow: hidden;
   aspect-ratio: 4 / 3;
+  background: #eeeff1;
 }
 
-.gg-services-img {
+.gg-service-photo-empty {
+  background: #0171bb;
+}
+
+.gg-service-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform .3s ease;
 }
 
-.gg-services-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid #eeeff1;
+.gg-service-tile:hover .gg-service-img {
+  transform: scale(1.04);
 }
 
-.gg-services-list li {
-  border-bottom: 1px solid #eeeff1;
+.gg-service-body {
+  padding-top: 16px;
 }
 
-.gg-services-list a {
+.gg-service-title {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 18px 2px;
+  gap: 8px;
   font-size: 20px;
   font-weight: 500;
   color: #1a1d1f;
-  text-decoration: none;
   transition: color .15s ease;
 }
 
-.gg-services-list a:hover {
+.gg-service-tile:hover .gg-service-title {
   color: #0171bb;
+}
+
+.gg-service-desc {
+  font-size: 15px;
+  color: var(--globals--color--texts--03);
+  margin: 6px 0 0;
+}
+
+.gg-service-photo-empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+}
+
+.gg-service-tile-noPhoto .gg-service-title,
+.gg-service-tile-noPhoto .gg-service-desc {
+  color: #fff;
+}
+
+.gg-service-tile-noPhoto .gg-service-body {
+  display: none;
 }
 
 .gg-services-arrow {
@@ -18594,7 +18629,11 @@ figcaption {
   transition: opacity .15s ease, transform .15s ease;
 }
 
-.gg-services-list a:hover .gg-services-arrow {
+.gg-service-tile:hover .gg-services-arrow {
   opacity: 1;
   transform: translateX(0);
+}
+
+.gg-service-tile-noPhoto .gg-services-arrow {
+  color: #fff;
 }
