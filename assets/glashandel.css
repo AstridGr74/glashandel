@@ -18948,6 +18948,13 @@ figcaption {
   height: calc(100% + 48px);
 }
 
+.gg-circle-svg--about {
+  top: -6px;
+  left: -28px;
+  width: calc(100% + 56px);
+  height: calc(100% + 26px);
+}
+
 .gg-underline-highlight {
   position: relative;
   display: inline-block;
