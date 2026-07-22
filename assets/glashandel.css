@@ -18550,6 +18550,7 @@ figcaption {
 }
 
 .gg-news-banner {
+  position: relative;
   margin-top: 48px;
   display: flex;
   flex-wrap: wrap;
@@ -18922,4 +18923,81 @@ figcaption {
 .footer-card .contact-link---icon-left > img:not(.contact-icon) {
   background-color: transparent;
   padding: 0;
+  width: 40px;
+  min-width: 40px;
+}
+
+.gg-circle-highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.gg-circle-svg {
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: calc(100% + 24px);
+  height: calc(100% + 26px);
+  pointer-events: none;
+}
+
+.gg-circle-svg--loose {
+  top: -26px;
+  left: -36px;
+  width: calc(100% + 72px);
+  height: calc(100% + 48px);
+}
+
+.gg-underline-highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.gg-underline-svg {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 12px;
+  pointer-events: none;
+}
+
+.gg-news-arrow {
+  display: none;
+  position: absolute;
+  top: -76px;
+  left: 4px;
+  width: 74px;
+  height: auto;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .gg-news-arrow {
+    display: block;
+  }
+}
+
+.gg-more-projects {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.gg-more-projects-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1d1f;
+  text-decoration: none;
+}
+
+.gg-more-projects-link:hover {
+  color: #0171bb;
+}
+
+.gg-footer-arrow {
+  width: 58px;
+  height: auto;
+  margin-right: 6px;
+  vertical-align: middle;
+  margin-top: -8px;
 }
