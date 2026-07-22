@@ -19031,6 +19031,10 @@ figcaption {
   padding-bottom: 64px;
 }
 
+.gg-about-section--first {
+  padding-top: 96px;
+}
+
 .gg-about-badge.badge {
   min-height: 30px;
   width: fit-content;
