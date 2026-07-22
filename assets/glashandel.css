@@ -19027,3 +19027,51 @@ figcaption {
   padding-bottom: 64px;
 }
 
+.gg-about-badge.badge {
+  min-height: 30px;
+  padding: 6px 14px 6px;
+  font-size: 13px;
+}
+
+.gg-about-badge .badge-icon-left {
+  width: 22px;
+  min-width: 22px;
+  height: 22px;
+  min-height: 22px;
+  margin-top: 0;
+  margin-left: 0;
+  padding: 2px;
+}
+
+.gg-martin-row {
+  margin-top: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.gg-martin-photo {
+  width: 76px;
+  height: 76px;
+  min-width: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0171bb;
+}
+
+.gg-martin-text {
+  margin-top: 0;
+}
+
+@media (max-width: 479px) {
+  .gg-martin-row {
+    gap: 14px;
+  }
+
+  .gg-martin-photo {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+  }
+}
+
