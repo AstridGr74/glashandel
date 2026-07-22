@@ -18399,6 +18399,112 @@ figcaption {
   margin-top: 10px;
 }
 
+.gg-process-section {
+  padding-top: 0;
+}
+
+.gg-process-kicker {
+  color: #0171bb;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.gg-process-heading {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.15;
+}
+
+.gg-howworks-wrap {
+  padding: 24px 0 48px;
+}
+
+.gg-howworks-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.gg-howworks-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px -12px rgba(20, 30, 50, 0.18);
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 320px;
+  min-height: 220px;
+  position: relative;
+}
+
+.gg-howworks-card.card-1 {
+  transform: rotate(-3deg);
+}
+
+.gg-howworks-card.card-2 {
+  transform: rotate(2deg);
+  z-index: 1;
+}
+
+.gg-howworks-card.card-3 {
+  transform: rotate(-2deg);
+}
+
+.gg-howworks-number {
+  margin-bottom: 20px;
+}
+
+.gg-howworks-number img {
+  height: 76px;
+  width: auto;
+  display: block;
+}
+
+.gg-howworks-card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.gg-howworks-card p {
+  font-size: 15px;
+  color: var(--globals--color--texts--03);
+  line-height: 1.5;
+}
+
+.gg-howworks-arrow {
+  display: none;
+  width: 90px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .gg-howworks-cards {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    padding: 20px 0;
+  }
+
+  .gg-howworks-card {
+    flex-shrink: 0;
+  }
+
+  .gg-howworks-card.card-2 {
+    margin-top: -16px;
+  }
+
+  .gg-howworks-arrow {
+    display: block;
+    margin: 40px -20px 0;
+    align-self: flex-start;
+  }
+}
+
 .gg-story-text + .gg-story-text {
   margin-top: 16px;
 }
