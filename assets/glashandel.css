@@ -18629,10 +18629,10 @@ figcaption {
   flex-wrap: wrap;
   align-items: center;
   gap: 20px 28px;
-  background: none;
+  background: #dceaf7;
   border-radius: 0;
   border-left: 4px solid #0171bb;
-  padding: 4px 0 4px 24px;
+  padding: 24px 28px;
   box-shadow: none;
 }
 
