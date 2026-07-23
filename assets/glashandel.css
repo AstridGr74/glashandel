@@ -19176,17 +19176,9 @@ figcaption {
   font-weight: 500;
   color: #0171bb;
   margin-bottom: 4px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .gg-related-card-text p.gg-story-text {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
   max-width: none;
 }
 
