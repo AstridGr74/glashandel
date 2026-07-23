@@ -19200,3 +19200,16 @@ figcaption {
 .gg-recaptcha-wrapper {
   margin: 6px 0 0;
 }
+
+.gg-privacy-content p,
+.gg-privacy-content ul {
+  margin-bottom: 18px;
+  max-width: none;
+}
+.gg-privacy-content h2 {
+  margin-top: 44px;
+  margin-bottom: 14px;
+}
+.gg-privacy-content li {
+  margin-bottom: 6px;
+}
