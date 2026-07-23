@@ -19242,3 +19242,10 @@ figcaption {
   opacity: 1 !important;
   transform: none !important;
 }
+
+.gg-service-readmore {
+  color: #0171bb;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+}
