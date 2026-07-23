@@ -19169,3 +19169,27 @@ figcaption {
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
+
+.gg-consent-wrapper {
+  margin: 4px 0 0;
+}
+.gg-consent-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #555;
+  cursor: pointer;
+}
+.gg-consent-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  margin-top: 2px;
+  accent-color: #0171bb;
+  cursor: pointer;
+}
+.gg-recaptcha-wrapper {
+  margin: 12px 0 0;
+}

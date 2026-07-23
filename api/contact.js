@@ -2,8 +2,9 @@
 // Ontvangt een POST van elk formulier op de site en mailt de inhoud naar
 // info@glashandelgroenewegen.nl via Resend (https://resend.com).
 //
-// Vereiste omgevingsvariabele in Vercel:
-//   RESEND_API_KEY   – de API-sleutel uit je Resend-account
+// Vereiste omgevingsvariabelen in Vercel:
+//   RESEND_API_KEY        – de API-sleutel uit je Resend-account
+//   RECAPTCHA_SECRET_KEY  – de secret key uit het reCAPTCHA-admin panel
 // Optioneel:
 //   MAIL_TO          – ontvanger (standaard info@glashandelgroenewegen.nl)
 //   MAIL_FROM        – afzender (standaard een adres op je eigen domein)
@@ -57,6 +58,24 @@ async function readBody(req) {
   return parseUrlEncoded(raw);
 }
 
+async function verifyRecaptcha(token, remoteIp) {
+  const secret = process.env.RECAPTCHA_SECRET_KEY;
+  if (!secret || !token) return false;
+  try {
+    const params = new URLSearchParams({ secret, response: token });
+    if (remoteIp) params.set("remoteip", remoteIp);
+    const response = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: params.toString(),
+    });
+    const result = await response.json();
+    return result.success === true;
+  } catch {
+    return false;
+  }
+}
+
 // Voorkom open-redirects: sta alleen relatieve paden op de eigen site toe.
 function safeRedirect(next) {
   if (typeof next === "string" && next.startsWith("/") && !next.startsWith("//")) {
@@ -103,6 +122,21 @@ module.exports = async (req, res) => {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     errorPage(res, 500);
+    return;
+  }
+
+  // Verplicht: akkoord met de privacyverklaring.
+  if (!body.Privacy) {
+    errorPage(res, 400);
+    return;
+  }
+
+  const remoteIp =
+    (req.headers["x-forwarded-for"] || "").split(",")[0].trim() ||
+    req.socket?.remoteAddress;
+  const recaptchaOk = await verifyRecaptcha(body["g-recaptcha-response"], remoteIp);
+  if (!recaptchaOk) {
+    errorPage(res, 400);
     return;
   }
 
