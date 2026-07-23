@@ -7433,13 +7433,86 @@ figcaption {
   position: relative;
 }
 
+.rich-text-v1 {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--globals--color--texts--03);
+}
+
 .rich-text-v1 p {
   margin-top: var(--globals--margins--mg-small);
   margin-bottom: var(--globals--margins--mg-small);
 }
 
 .rich-text-v1 h1, .rich-text-v1 h2 {
-  margin-bottom: var(--globals--margins--mg-small);
+  margin-top: 44px;
+  margin-bottom: 16px;
+  font-size: 27px;
+  line-height: 1.25;
+  font-weight: 500;
+  color: var(--components--titles-paragraphs--text-titles);
+}
+
+.rich-text-v1 h2:first-child {
+  margin-top: 0;
+}
+
+.rich-text-v1 strong {
+  color: var(--components--titles-paragraphs--text-titles);
+  font-weight: 600;
+}
+
+.gg-article-lead {
+  font-size: 21px;
+  line-height: 1.55;
+  color: var(--components--titles-paragraphs--text-titles);
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.rich-text-v1 ul.gg-article-checklist {
+  list-style: none;
+  padding-left: 0;
+  background: var(--light-blue);
+  padding: 24px 28px;
+  margin: 24px 0;
+}
+
+.rich-text-v1 ul.gg-article-checklist li {
+  padding-left: 28px;
+  position: relative;
+}
+
+.rich-text-v1 ul.gg-article-checklist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  background: #0171bb;
+  border-radius: 50%;
+}
+
+.gg-article-photo-wrap {
+  margin: 40px 0;
+}
+
+.gg-article-photo-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gg-article-pullquote {
+  border-left: 3px solid #0171bb;
+  padding: 4px 0 4px 24px;
+  margin: 32px 0;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--components--titles-paragraphs--text-titles);
 }
 
 .rich-text-v1 ul {
