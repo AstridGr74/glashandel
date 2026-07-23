@@ -19144,7 +19144,10 @@ figcaption {
   border-top: 4px solid #0171bb;
   padding-top: 16px;
   max-width: 480px;
+  width: 100%;
+  min-width: 0;
   height: 100%;
+  box-sizing: border-box;
 }
 
 .gg-related-card-photo {
@@ -19165,10 +19168,12 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   min-height: 90px;
+  min-width: 0;
+  flex: 1;
 }
 
 .gg-related-card-title {
-  font-weight: 600;
+  font-weight: 500;
   color: #0171bb;
   margin-bottom: 4px;
   display: -webkit-box;
