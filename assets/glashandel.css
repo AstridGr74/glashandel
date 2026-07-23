@@ -19138,12 +19138,13 @@ figcaption {
 
 .gg-related-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
   text-decoration: none;
   border-top: 4px solid #0171bb;
   padding-top: 16px;
   max-width: 480px;
+  height: 100%;
 }
 
 .gg-related-card-photo {
@@ -19159,10 +19160,29 @@ figcaption {
   object-fit: cover;
 }
 
+.gg-related-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90px;
+}
+
 .gg-related-card-title {
   font-weight: 600;
   color: #0171bb;
   margin-bottom: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.gg-related-card-text p.gg-story-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: none;
 }
 
 .dropdown-nav .sub-header .text-weight-semi {
@@ -19212,4 +19232,11 @@ figcaption {
 }
 .gg-privacy-content li {
   margin-bottom: 6px;
+}
+
+/* Astrid: geen fade/slide-in scroll-animaties meer, alles moet meteen
+   statisch zichtbaar zijn — overschrijft Webflow's inline IX2-animatiestijlen */
+[style*="opacity:0"] {
+  opacity: 1 !important;
+  transform: none !important;
 }
