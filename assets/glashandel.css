@@ -19176,10 +19176,14 @@ figcaption {
   font-weight: 500;
   color: #0171bb;
   margin-bottom: 4px;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .gg-related-card-text p.gg-story-text {
   max-width: none;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .dropdown-nav .sub-header .text-weight-semi {
